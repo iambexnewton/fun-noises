@@ -1,0 +1,35 @@
+.container {
+  background-color: rgb(252, 246, 247);
+  height: 100vh;
+}
+
+.button-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-self: center;
+  padding-top: 140px;
+  padding-left: 10px;
+  padding-right: 10px;
+  column-gap: 10px;
+  row-gap: 15px;
+}
+
+.button {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-color: rgb(167, 167, 167);
+  border-width: 4px;
+  border-radius: 100%;
+  background-color: transparent;
+}
+
+.button:active:after {
+  box-shadow: 0 0 0 0 white;
+  position: absolute;
+  border-radius: 4em;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  transition: 0s;
+}
