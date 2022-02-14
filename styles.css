@@ -1,14 +1,13 @@
 .container {
-  background-color: rgb(252, 246, 247);
+  background: #efefef;
   height: 100vh;
 }
 
 .button-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   justify-self: center;
-  padding-top: 140px;
   padding-left: 10px;
   padding-right: 10px;
   column-gap: 10px;
@@ -16,20 +15,87 @@
 }
 
 .button {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  border-color: rgb(167, 167, 167);
-  border-width: 4px;
-  border-radius: 100%;
-  background-color: transparent;
+  padding: 4.5em 3.8em;
+  border: none;
+  border-radius: 100rem;
+  color: #444;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.7),
+    -6px -6px 10px rgba(255, 255, 255, 0.5),
+    6px 6px 8px rgba(255, 255, 255, 0.075), 6px 6px 10px rgba(0, 0, 0, 0.15);
+}
+button:hover {
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.6),
+    -2px -2px 4px rgba(255, 255, 255, 0.4),
+    2px 2px 2px rgba(255, 255, 255, 0.05), 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+button:active {
+  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.7),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 2px rgba(255, 255, 255, 0.075),
+    inset 2px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
-.button:active:after {
-  box-shadow: 0 0 0 0 white;
-  position: absolute;
-  border-radius: 4em;
-  left: 0;
-  top: 0;
-  opacity: 1;
-  transition: 0s;
+@media only screen and (max-width: 320px) {
+  .button-wrapper {
+    padding-top: 10px;
+  }
+  .button {
+    padding: 3.8em 3.4em;
+  }
+}
+@media only screen and (min-width: 360px) {
+  .button-wrapper {
+    padding-top: 80px;
+  }
+  .button {
+    padding: 3em 3em;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .button-wrapper {
+    padding-top: 60px;
+    column-gap: 20px;
+    row-gap: 30px;
+  }
+  .button {
+    padding: 3.5em 3em;
+  }
+}
+@media only screen and (min-width: 411px) {
+  .button-wrapper {
+    padding-top: 90px;
+  }
+}
+@media only screen and (min-width: 414px) {
+  .button-wrapper {
+    padding-top: 10px;
+  }
+  .button {
+    padding: 4.8em 3.7em;
+  }
+}
+@media only screen and (min-width: 540px) {
+  .button-wrapper {
+    padding-top: 20px;
+  }
+  .button {
+    padding: 4.8em 3.7em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .button-wrapper {
+    padding-top: 100px;
+  }
+  .button {
+    padding: 5em 4.8em;
+  }
 }
