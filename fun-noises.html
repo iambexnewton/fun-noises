@@ -18,44 +18,49 @@
       <audio id="sound7" src="sounds/snare.wav"></audio>
       <audio id="sound8" src="sounds/tom.wav"></audio>
       <audio id="sound9" src="sounds/tink.wav"></audio>
-
+      <script>
+        function playSound1() {
+          sound1.currentTime = 0;
+          sound1.play();
+        }
+        function playSound2() {
+          sound2.currentTime = 0;
+          sound2.play();
+        }
+        function playSound3() {
+          sound3.currentTime = 0;
+          sound3.play();
+        }
+        function playSound4() {
+          sound4.currentTime = 0;
+          sound4.play();
+        }
+        function playSound5() {
+          sound5.currentTime = 0;
+          sound5.play();
+        }
+        function playSound6() {
+          sound6.currentTime = 0;
+          sound6.play();
+        }
+        function playSound7() {
+          sound7.currentTime = 0;
+          sound7.play();
+        }
+        function playSound8() {
+          sound8.currentTime = 0;
+          sound8.play();
+        }
+      </script>
       <div class="button-wrapper">
-        <button
-          class="button one"
-          onclick="document.getElementById('sound1').play()"
-        ></button>
-        <button
-          class="button two"
-          onclick="document.getElementById('sound2').play()"
-        ></button>
-        <button
-          class="button three"
-          onclick="document.getElementById('sound3').play()"
-        ></button>
-        <button
-          class="button four"
-          onclick="document.getElementById('sound4').play()"
-        ></button>
-        <button
-          class="button five"
-          onclick="document.getElementById('sound5').play()"
-        ></button>
-        <button
-          class="button six"
-          onclick="document.getElementById('sound6').play()"
-        ></button>
-        <button
-          class="button seven"
-          onclick="document.getElementById('sound7').play()"
-        ></button>
-        <button
-          class="button eight"
-          onclick="document.getElementById('sound8').play()"
-        ></button>
-        <button
-          class="button nine"
-          onclick="document.getElementById('sound9').play()"
-        ></button>
+        <button class="button one" onclick="playSound1()"></button>
+        <button class="button two" onclick="playSound2()"></button>
+        <button class="button three" onclick="playSound3()"></button>
+        <button class="button four" onclick="playSound4()"></button>
+        <button class="button five" onclick="playSound5()"></button>
+        <button class="button six" onclick="playSound6()"></button>
+        <button class="button seven" onclick="playSound7()"></button>
+        <button class="button eight" onclick="playSound8()"></button>
       </div>
     </div>
   </body>
